@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #000033;
+  color: white;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+/* HEADER */
+.header {
+  grid-column: 1 / 4;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  grid-column: 1 / 4;
+  background-color: #A7C454;
+  color: black;
+  text-align: center;
+  padding: 40px;
+}
+
+/* INFO */
+.info {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #000066;
+  text-align: center;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  padding: 20px;
+  text-align: center;
+}
+
+.card1 {
+  background-color: #FF7612;
+}
+
+.card2 {
+  background-color: #A7C454;
+  color: black;
+}
+
+.card3 {
+  background-color: #FF7612;
+}
+
+/* CTA */
+.cta {
+  grid-column: 1 / 4;
+  text-align: center;
+  padding: 40px;
+}
+
+.cta button {
+  background-color: #FF7612;
+  border: none;
+  padding: 15px 25px;
+  color: white;
+  font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+  grid-column: 1 / 4;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+/* FORM (SOLO FIX NECESARIO) */
+.formulario {
+  grid-column: 1 / 4;
+  text-align: center;
+  margin-top: 50px;
+}
+
+input, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .header,
+  .hero,
+  .info,
+  .cta,
+  .footer,
+  .formulario {
+    grid-column: 1 / 2;
+  }
+}
